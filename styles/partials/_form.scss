@@ -1,0 +1,58 @@
+.city {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  // display: none;
+
+  &__form-header {
+    margin-bottom: 1rem;
+    font-weight: 100;
+  }
+
+  &__form-input {
+    margin-bottom: 1rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__form {
+    margin: 0 1rem;
+    height: 10rem;
+  }
+
+  &__form-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include tablet {
+    display: initial;
+    height: 90vh;
+    border: 1px solid red;
+
+    &__form {
+      margin-top: 10rem;
+    }
+
+    &__form-header {
+      font-size: 1.5rem;
+    }
+
+    &__form-input {
+      padding: 0.5rem 2rem;
+    }
+  }
+
+  @include desktop {
+    &__form {
+      margin-top: 15rem;
+    }
+  }
+}
