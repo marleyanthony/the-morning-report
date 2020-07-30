@@ -7,13 +7,21 @@
   color: $secondary-color;
   font-weight: 100;
 
-  &__login-img {
-    height: 2rem;
-    border-radius: 50%;
+  &__login {
+    display: flex;
+    align-items: center;
   }
 
   &__login-name {
-    display: none;
+    display: initial;
+    font-weight: 100;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+  }
+
+  &__login-img {
+    height: 2rem;
+    border-radius: 50%;
   }
 
   @include tablet {
@@ -23,19 +31,12 @@
       font-size: 1.25rem;
     }
 
-    &__login {
-      display: flex;
-      align-items: center;
-    }
-
     &__login-img {
       margin-left: 1rem;
       height: 2.5rem;
     }
 
     &__login-name {
-      display: initial;
-      font-weight: 100;
       font-size: 1.25rem;
     }
   }

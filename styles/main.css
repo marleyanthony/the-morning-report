@@ -37,13 +37,25 @@ body {
   font-weight: 100;
 }
 
-.header__login-img {
-  height: 2rem;
-  border-radius: 50%;
+.header__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__login-name {
-  display: none;
+  display: initial;
+  font-weight: 100;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.header__login-img {
+  height: 2rem;
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) {
@@ -53,21 +65,11 @@ body {
   .header__date {
     font-size: 1.25rem;
   }
-  .header__login {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .header__login-img {
     margin-left: 1rem;
     height: 2.5rem;
   }
   .header__login-name {
-    display: initial;
-    font-weight: 100;
     font-size: 1.25rem;
   }
 }
