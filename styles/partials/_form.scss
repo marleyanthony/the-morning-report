@@ -64,6 +64,8 @@
   }
 
   @include desktop {
+    // display: none;
+
     &__form {
       margin-top: 15rem;
     }

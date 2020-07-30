@@ -121,6 +121,23 @@ body {
   }
 }
 
+@media (min-width: 1440px) {
+  .report__header, .report__temp, .report__conditions, .report__recommend {
+    margin: 2rem;
+    font-weight: 100;
+    font-size: 2rem;
+  }
+  .report__quote-header {
+    margin: 1rem;
+    font-weight: 100;
+    font-size: 1.75rem;
+  }
+  .report__quote {
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
+}
+
 .city {
   height: 90vh;
   display: -webkit-box;

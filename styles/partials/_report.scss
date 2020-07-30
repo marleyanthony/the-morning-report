@@ -36,4 +36,28 @@
   @include tablet {
     display: none;
   }
+
+  @include desktop {
+    // display: block;
+
+    &__header,
+    &__temp,
+    &__conditions,
+    &__recommend {
+      margin: 2rem;
+      font-weight: 100;
+      font-size: 2rem;
+    }
+
+    &__quote-header {
+      margin: 1rem;
+      font-weight: 100;
+      font-size: 1.75rem;
+    }
+
+    &__quote {
+      font-weight: 100;
+      font-size: 1.5rem;
+    }
+  }
 }
